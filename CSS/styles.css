@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1000px;
+}
+
+.welcome {
+    background-image: url(../assets/photos/08-night.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome__logga {
+    height: 55px;
+    align-self:flex-start;
+}
+
+.welcome__heading {
+    color: rgb(33, 155, 120);
+    font-size: 2rem;
+    margin-top: auto;
+}
+
+.welcome__button {
+    background-color: transparent;
+    color: rgb(33, 155, 120);
+    border: solid 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    margin-bottom: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(95, 94, 92);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    background-color: rgb(180, 167, 149);
+    min-height: 25rem;
+}
+
+.presentation {
+    grid-column: 1 / span 3;
+}
+
+.presentation__heading {
+    color: #FFFFFF;
+}
+
+.presentation__text {
+    color: #FFFFFF;
+}
+
+.we-offer {
+    grid-column: 4 / span 3;
+}
+
+.we-offer__heading {
+    color: #FFFFFF;
+}
+
+.we-offer__list {
+    color: #FFFFFF;
+}
+
+.luxury {
+    background-image: url(/assets/photos/09-night.jpg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+    background-color: rgb(108, 126, 120);
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+    padding-left: 40px;
+    padding-top: 80px;
+}
+
+.luxury__text {
+    max-width: 400px;
+}
+
+.luxury__button {
+    font-size: 20px;
+    align-self: flex-start;
+    background-color: transparent;
+    border: solid 3px;
+    color: #FFFFFF;
+}
