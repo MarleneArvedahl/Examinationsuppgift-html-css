@@ -15,7 +15,7 @@ body {
 .welcome {
     background-image: url(../assets/photos/08-night.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     min-height: 35rem;
     display: flex;
     justify-content: center;
@@ -29,14 +29,14 @@ body {
 }
 
 .welcome__heading {
-    color: rgb(33, 155, 120);
+    color: rgb(240, 245, 244);
     font-size: 2rem;
     margin-top: auto;
 }
 
 .welcome__button {
     background-color: transparent;
-    color: rgb(33, 155, 120);
+    color: rgb(240, 245, 244); 
     border: solid 3px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -44,6 +44,11 @@ body {
     padding-right: 20px;
     font-size: 20px;
     margin-bottom: auto;
+}
+
+.welcome__button a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .navigation {
@@ -56,32 +61,37 @@ main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
-    background-color: rgb(180, 167, 149);
-    min-height: 25rem;
+    background-color: rgb(177, 158, 132);
 }
 
 .presentation {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
+    padding: 30px;
 }
 
 .presentation__heading {
     color: #FFFFFF;
+    font-size: 2rem;
 }
 
 .presentation__text {
     color: #FFFFFF;
+    font-size: 20px;
 }
 
 .we-offer {
-    grid-column: 4 / span 3;
+    grid-column: 5 / span 2;
+    padding: 30px;
 }
 
 .we-offer__heading {
     color: #FFFFFF;
+    font-size: 2rem;
 }
 
 .we-offer__list {
     color: #FFFFFF;
+    font-size: 20px;
 }
 
 .luxury {
@@ -97,8 +107,14 @@ main {
     padding-top: 80px;
 }
 
+.luxury__heading {
+    font-size: 2rem;
+}
+
 .luxury__text {
     max-width: 400px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgb(244, 241, 242);
 }
 
 .luxury__button {
@@ -107,4 +123,75 @@ main {
     background-color: transparent;
     border: solid 3px;
     color: #FFFFFF;
+}
+
+.retreat {
+    background-color: rgb(108, 100, 139);
+    background-image: url(/assets/photos/03-night.jpg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    background-position: left;
+    padding-right: 40px;
+    padding-top: 80px;
+    text-align: end;
+}
+
+.retreat__heading {
+    font-size: 30px;
+}
+
+.retreat__text {
+    max-width: 400px;
+    align-self: flex-end;
+    font-size: 20px;
+    text-align:right ;
+}
+
+.retreat__button {
+    font-size: 20px;
+    align-self: flex-start;
+    background-color: transparent;
+    border: solid 3px;
+    color: #FFFFFF;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    main {
+        grid-template-columns: 100%;
+    }
+    
+    .presentation {
+        grid-column: 1/span 1;
+        padding: 0px 10px;
+    }
+
+    .we-offer {
+        grid-column: 1/ span 1;
+        padding: 0px 10px; 
+    }
+
+    .luxury {
+    background-image: none;
+    padding: 15px;
+    min-height: 1rem;
+    }
+
+    .luxury__text {
+        text-shadow: none;
+    }
+
+    .retreat {
+        background-image: none;
+        padding: 15px;
+        min-height: 1rem;
+    }
 }
