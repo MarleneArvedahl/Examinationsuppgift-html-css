@@ -26,24 +26,27 @@ body {
 .welcome__logga {
     height: 55px;
     align-self:flex-start;
+    margin: 15px;
 }
 
 .welcome__heading {
     color: rgb(240, 245, 244);
     font-size: 2rem;
     margin-top: auto;
+    font-family: kalam;
 }
 
 .welcome__button {
     background-color: transparent;
     color: rgb(240, 245, 244); 
-    border: solid 3px;
+    border: solid 1px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
     margin-bottom: auto;
+    font-family: dosis;
 }
 
 .welcome__button a {
@@ -55,13 +58,14 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: rgb(95, 94, 92);
+    font-family: dosis;
 }
 
 main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
-    background-color: rgb(177, 158, 132);
+    background-color: rgb(96, 86, 74);
 }
 
 .presentation {
@@ -72,11 +76,33 @@ main {
 .presentation__heading {
     color: #FFFFFF;
     font-size: 2rem;
+    font-family: kalam;
 }
 
 .presentation__text {
     color: #FFFFFF;
     font-size: 20px;
+    font-family: dosis;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.presentation__button {
+    background-color: transparent;
+    color: rgb(240, 245, 244); 
+    border: solid 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 15px;
+    margin-bottom: auto;
+    font-family: dosis;
+}
+
+.presentation__button a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .we-offer {
@@ -87,11 +113,15 @@ main {
 .we-offer__heading {
     color: #FFFFFF;
     font-size: 2rem;
+    color: #FFFFFF;
+    font-family: kalam;
 }
 
 .we-offer__list {
-    color: #FFFFFF;
     font-size: 20px;
+    color: #FFFFFF;
+    font-family: dosis;
+    line-height: 1.5;
 }
 
 .luxury {
@@ -99,34 +129,49 @@ main {
     background-size: 65%;
     background-repeat: no-repeat;
     min-height: 30rem;
-    background-color: rgb(108, 126, 120);
+    background-color: rgb(95, 94, 92);
     display: flex;
     flex-direction: column;
     background-position: right;
     padding-left: 40px;
     padding-top: 80px;
+    color: #FFFFFF;
 }
 
 .luxury__heading {
     font-size: 2rem;
+    font-family: kalam;
+    margin-bottom: 10px;
 }
 
 .luxury__text {
-    max-width: 400px;
+    max-width: 425px;
     font-size: 20px;
-    text-shadow: 1px 1px 2px rgb(244, 241, 242);
+    font-family: dosis;
+    line-height: 1.5;
+    padding-bottom: 25px;
 }
 
 .luxury__button {
     font-size: 20px;
     align-self: flex-start;
     background-color: transparent;
-    border: solid 3px;
+    border: solid 1px;
     color: #FFFFFF;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: dosis;
+}
+
+.luxury__button a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .retreat {
-    background-color: rgb(108, 100, 139);
+    background-color: rgb(96, 86, 74);
     background-image: url(/assets/photos/03-night.jpg);
     background-repeat: no-repeat;
     background-size: 65%;
@@ -137,32 +182,319 @@ main {
     padding-right: 40px;
     padding-top: 80px;
     text-align: end;
+    color: #FFFFFF;
 }
 
 .retreat__heading {
     font-size: 30px;
+    font-family: kalam;
+    margin-bottom: 10px;
 }
 
 .retreat__text {
-    max-width: 400px;
+    max-width: 447px;
     align-self: flex-end;
     font-size: 20px;
-    text-align:right ;
+    text-align:right;
+    font-family: dosis;
+    line-height: 1.5;
+    padding-bottom: 25px;
 }
 
 .retreat__button {
     font-size: 20px;
     align-self: flex-start;
     background-color: transparent;
-    border: solid 3px;
+    border: solid 1px;
     color: #FFFFFF;
     align-self: flex-end;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: dosis;
 }
+
+.retreat__button a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(95, 94, 92);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+footer img {
+    max-width: 130px;
+    padding: 20px;
+}
+
+footer p {
+    max-width: 150px;
+}
+
+footer aside {
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.book-wrapper {
+    max-width: 1000px;
+}
+
+.book-wrapper__header {
+    background-color: rgb(95, 94, 92);
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-wrapper__header h1 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-family: kalam;   
+}
+
+.search-menu {
+    background-color: rgb(96, 86, 74);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: dosis;
+    color: #FFFFFF;
+}
+
+.search-menu__button {
+    background-color: transparent;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: dosis;
+    color: #FFFFFF;
+    border: solid 1px;
+}
+
+.luxury-room {
+    grid-column: 1 / span 6 ;
+    grid-row: 3 / span 2;
+    display: flex;
+    background-color: rgb(227, 225, 221);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.luxury-room__image img {
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.luxury-room__information h2 {
+    font-family: kalam;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.luxury-room__information h3 {
+    font-family: dosis;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.luxury-room__information p {
+    font-family: dosis;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.luxury-room__icons {
+    display: flex;
+}
+
+.luxury-room__box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.luxury-room__box i {
+    line-height: 1.5;
+}
+
+.retreat-room {
+    grid-column: 1 / span 6;
+    grid-row: 5 / span 2;
+    display: flex;
+    background-color: rgb(227, 225, 221);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.retreat-room__image img {
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.retreat-room__information h2 {
+    font-family: kalam;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.retreat-room__information h3 {
+    font-family: dosis;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.retreat-room__information p {
+    font-family: dosis;
+    padding-left: 20px;
+}
+
+.retreat-room__icons {
+    display: flex;
+}
+
+.retreat-room__box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.retreat-room__box i {
+    line-height: 1.5;
+}
+
+.take-me-home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.take-me-home-wrapper__button {
+    background-color: transparent;
+    border: solid 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: dosis;
+}
+
+.take-me-home-wrapper__button a {
+    color: black;
+    text-decoration: none;
+}
+
+.about {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+}
+
+.about__image {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin: 5px;
+    border-radius: 1%;
+}
+
+.about__first-image {
+    background-image: url(/assets/photos/01-day.jpg);
+    grid-column: 1 / span 3;
+}
+
+.about__second-image {
+    background-image: url(/assets/photos/03-day.jpg);
+    grid-column: 4 / span 3;
+}
+
+.about__third-image {
+    background-image: url(/assets/photos/09-day.jpg);
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+}
+
+.about__fourth-image {
+    background-image: url(/assets/photos/05-day.jpg);
+    grid-column: 4 / span 3;
+    grid-row: 4 / span 1;
+}
+
+.about__footer {
+    grid-column: 1 / span 6;
+    grid-row: 5 / span 1;
+}
+
+.description {
+    min-height: 300px;
+    background-color: rgb(96, 86, 74);
+    grid-column: 1 / span 6;
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.description__heading {
+    font-size: 2rem;
+    font-family: kalam;
+    margin-bottom: 10px;
+}
+
+.description__text {
+    font-size: 20px;
+    font-family: dosis;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    max-width: 800px;
+}
+
+.description__button {
+    background-color: transparent;
+    color: rgb(240, 245, 244); 
+    border: solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    margin-bottom: auto;
+    font-family: dosis;
+}
+
+.description__button a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 
 @media screen and (max-width: 768px) {
 
     .navigation {
         flex-direction: column;
+        padding-left: 20px;
     }
 
     main {
@@ -171,12 +503,12 @@ main {
     
     .presentation {
         grid-column: 1/span 1;
-        padding: 0px 10px;
+        padding: 0px 15px;
     }
 
     .we-offer {
         grid-column: 1/ span 1;
-        padding: 0px 10px; 
+        padding: 0px 15px; 
     }
 
     .luxury {
@@ -193,5 +525,35 @@ main {
         background-image: none;
         padding: 15px;
         min-height: 1rem;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .search-menu {
+        flex-direction: column;
+    }
+
+    .search-menu__button {
+        align-self: flex-start;
+    }
+
+    .luxury-room, .retreat-room {
+        flex-direction: column;
+    }
+
+    .about {
+        grid-template-columns: 100%;
+    }
+
+    .about__image {
+        grid-column: 1/span 1;
+        grid-row: auto;
+    }
+
+    .about__footer {
+        grid-column: 1 / span 1;
+        grid-row: auto;
     }
 }
